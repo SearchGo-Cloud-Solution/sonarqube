@@ -1,9 +1,9 @@
 #!/bin/bash
 
-# Carregar variáveis do arquivo sonar.env
+# Load variables from sonar.env file
 source sonar.env
 
-# Executar o SonarScanner em um container Docker
+# Run SonarScanner in a Docker container
 docker run \
 --rm \
 --network sonarnet \
