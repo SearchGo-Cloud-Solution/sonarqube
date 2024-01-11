@@ -22,8 +22,9 @@
 remote="$1"
 url="$2"
 
+branch_name=$(git rev-parse --abbrev-ref HEAD)
 commit_hash=$(git rev-parse --short HEAD)
-sonar-scanner $commit_hash
+sonar-scanner $commit_hash $branch_name
 
 z40=0000000000000000000000000000000000000000
 
