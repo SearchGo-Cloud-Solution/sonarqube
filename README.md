@@ -24,4 +24,9 @@
     - SONAR_TOKEN=sqp_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 
 # Running analysis
-1. Run as current user `sonar-scanner` in the root directory of the project.
+1. Run as current user `sonar-scanner PROJECT_VERSION` in the root directory of the project:
+    - PROJECT_VERSION: version of the project to be analyzed. Allowing to identify the version of the project in the sonar interface.
+
+# Running analysis automatically before each push
+1. Run as current user `cp pre-push .git/hooks/pre-push` in the root directory of the project.
+2. Run as current user `chmod +x .git/hooks/pre-push` in the root directory of the project.
