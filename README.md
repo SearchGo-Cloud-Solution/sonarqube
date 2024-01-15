@@ -29,6 +29,7 @@
     - SONAR_TOKEN=<TOKEN_GENERATED_IN_STEP_5>
 10. Add on .gitignore file the following line:
     - .scannerwork
+    - *sonar.env
 
 
 # Running analysis
